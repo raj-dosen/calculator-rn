@@ -11,7 +11,7 @@ const Screen = ({value, onChange}: ScreenProps) => {
         color={primaryTextColor}
         variant={'unstyled'}
         isReadOnly
-        bg={primaryBgColor}
+        // bg={primaryBgColor}
         fontSize={'2xl'}
         mt={16}
         h={16}
