@@ -5,10 +5,11 @@ import TButton from './components/TButton';
 import {useUtilities} from './hooks/useUtilities';
 import {ButtonProps} from './types/ButtonProps';
 import AndDesign from 'react-native-vector-icons/AntDesign';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Icon} from 'native-base';
 
 const Main = () => {
-  const [value, setValue] = useState('0');
+  const [value, setValue] = useState('');
 
   const {
     handleScreenChange,
@@ -29,7 +30,7 @@ const Main = () => {
       {type: 'text', title: '%', onPress: handleButtonPress('%')},
       {
         type: 'icon',
-        title: <Icon color={'red.500'} as={AndDesign} name={'delete'} />,
+        title: <Icon color={'red.500'} as={Ionicons} name={'backspace'} />,
         onPress: handleDelete,
       },
     ],
