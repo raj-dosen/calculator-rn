@@ -1,11 +1,11 @@
 import { Box, Input } from 'native-base';
 import React from 'react';
 import { ScreenProps } from '../types/ScreenProps';
-import { useWindowDimensions } from 'react-native';
+// import { useWindowDimensions } from 'react-native';
 
 const Screen = ({ value, onChange }: ScreenProps) => {
   // const screenWidth = useWindowDimensions().width;
- 
+
   return (
     <Box>
       <Input
@@ -27,6 +27,5 @@ const Screen = ({ value, onChange }: ScreenProps) => {
     </Box>
   );
 };
-
 
 export default Screen;
