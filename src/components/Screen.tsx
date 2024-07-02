@@ -1,25 +1,32 @@
-import {Box, Input} from 'native-base';
+import { Box, Input } from 'native-base';
 import React from 'react';
-import {useColors} from '../theme/colors';
-import {ScreenProps} from '../types/ScreenProps';
+import { ScreenProps } from '../types/ScreenProps';
+import { useWindowDimensions } from 'react-native';
 
-const Screen = ({value, onChange}: ScreenProps) => {
-  const {primaryBgColor, primaryTextColor} = useColors();
+const Screen = ({ value, onChange }: ScreenProps) => {
+  // const screenWidth = useWindowDimensions().width;
+ 
   return (
     <Box>
       <Input
-        color={primaryTextColor}
-        variant={'unstyled'}
+        variant="unstyled"
+        _light={{
+          _text: { color: 'black' },
+        }}
+        _dark={{
+          _text: { color: 'white' },
+        }}
         isReadOnly
-        // bg={primaryBgColor}
-        fontSize={'2xl'}
-        mt={16}
-        h={16}
-        {...{value}}
+        fontSize={'4xl'}
+        value={value}
         onChangeText={onChange}
+        style={{
+          textAlign:'right'
+        }}
       />
     </Box>
   );
 };
+
 
 export default Screen;
