@@ -88,9 +88,8 @@ const Main = () => {
           )}
         </VStack>
 
-        <VStack mt={5} pb={'20px'} direction={'row'} space={10} justifyContent={'center'}
-        >
-          <TouchableOpacity>
+        <VStack mt={5} pb={'20px'} direction={'row'} space={10} justifyContent={'center'}>
+          {/* <TouchableOpacity>
             <Icon size={'5'} as={AndDesign} name={'instagram'} />
           </TouchableOpacity>
           <TouchableOpacity>
@@ -98,7 +97,7 @@ const Main = () => {
           </TouchableOpacity>
           <TouchableOpacity>
             <Icon color={'red.500'} size={'5'} as={AndDesign} name={'github'} />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </VStack>
       </Box>
     </Box>
